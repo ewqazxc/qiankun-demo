@@ -1,0 +1,34 @@
+.main{
+  height: 100%;
+  width: 100%;
+  border: 1px solid aqua;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+
+  .flexLf{
+    border: 1px solid red;
+  }
+  .flexRt{
+    border: 1px solid blue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .head{
+      border: 1px solid yellow;
+      min-height: 40px;
+    }
+    .tags{
+      border: 1px solid aquamarine;
+
+    }
+    .content{
+      border: 1px solid green;
+      flex: 1;
+      overflow: auto;
+      >div{
+        min-width: 1024px;
+      }
+    }
+  }
+}
